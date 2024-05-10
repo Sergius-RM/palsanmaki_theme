@@ -1,0 +1,190 @@
+@font-face
+    font-family: 'DoUbLeBaSs'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/DoUbLeBaSs/DoubleBass-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'DoUbLeBaSs Bold'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/DoUbLeBaSs/DoubleBass-Bold.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Matrix II OT'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/MatrixIIOT/MatrixIIOT-Reg.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Matrix II OT Bold'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/MatrixIIOT/MatrixIIOT-ExtraBold.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Matrix II OT Italic'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/MatrixIIOT/MatrixIIOT-RegItalic.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Montserrat'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/Montserrat/Montserrat-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Montserrat Bold'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Inter'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/Inter/Inter-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Inter SemiBold'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/Inter/Inter-SemiBold.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Work Sans'
+    src: url('/wp-content/themes/palsanmaki/assets/fonts/Work_Sans/WorkSans-Regular.ttf')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+html
+    scroll-behavior: smooth
+body
+    color: $base-color
+    font-family: $font-texts
+    font-size: $rootSize
+    line-height: $lh-p
+h1, h2
+    font-family: $matrix-bold-fonts
+    font-weight: 900
+    color: $base-color
+h3, h4 ,h5, h6
+    font-family: $matrix-fonts
+    font-weight: 700
+    color: $base-color
+h1
+    line-height: $lh-1
+    font-size: $h1-size
+h2
+    line-height: $lh-1
+    font-size: $h2-size
+h3
+    line-height: $lh-3
+    font-size: $h3-size
+h4
+    line-height: $lh-3
+    font-size: $h4-size
+h5
+    line-height: $lh-5
+    font-size: $h5-size
+h6
+    line-height: $lh-3
+    font-size: $h6-size
+p
+    line-height: $lh-p
+    color: $base-color
+    font-family: $font-texts
+strong
+    font-family: $inter-semiBold
+.blog-details-content
+    p
+        font-size: $f4
+.container
+    max-width: 1320px
+a
+    position: relative
+.is_onmobile
+    display: none
+.no_mobile
+    display: contents
+#progress-indicator
+    padding: 12px 25px
+    // border: 2px solid $seconday-color
+    width: fit-content
+    border-radius: 30px
+    color: $seconday-color
+    font-weight: 900
+svg
+    -webkit-background-clip: text
+header
+    padding: 0px 30px
+    position: relative
+    z-index: 3
+    .custom-logo
+        width: 140px
+        height: auto
+        padding: 10px 0
+
+.section_overlay
+    background-color: #305032a8
+    width: 100%
+    height: 100%
+    position: absolute
+    filter: contrast(200%)
+
+.cta_btn
+    +cta-btn
+    margin-bottom: 10px
+    display: inline-block
+    &:hover
+        +cta-btn-hover
+        color: $primary-color
+
+.lost_page
+    .container
+        margin-top: 50px
+        margin-bottom: 50px
+    h1
+        font-size: 300px
+        color: #DEDEDE
+        font-weight: 900
+        text-align: center
+        line-height: 363px
+    h2
+        font-size: 36px
+        line-height: 44px
+        text-align: center
+        color: $base-color
+        line-height: 44px
+        margin-bottom: 50px
+    .cta_btn
+        display: block
+        width: fit-content
+    .lost_search
+        padding: 60px 0 80px 0
+        background: $primary-color
+        border-bottom: 10px solid $primary-color
+        color: #fff !important
+        background: $primary-light !important
+        top: 20px !important
+        h6
+            color: $light-color
+            margin-bottom: 50px
+            font-weight: 300
+        .search
+            .search-field
+                padding: 10px 15px
+                border: 0
+                border-radius: 15px
+            .search-submit
+                background-size: inherit
+                background: $seconday-color
+                border-radius: 30px
+                color: $light-color
+                border: 0
+                padding: 12px 25px

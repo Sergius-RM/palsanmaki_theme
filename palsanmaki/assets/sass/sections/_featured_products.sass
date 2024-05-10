@@ -1,0 +1,77 @@
+.featured_products_section
+    padding-top: 100px
+    padding-bottom: 100px
+    background: url(/wp-content/themes/palsanmaki/assets/images/bd_double.png) 50% 50% repeat-x $primary-color
+    padding: 110px 0
+    .row
+        padding-top: 30px
+    .product_item_area:nth-of-type(3n+2)
+        bottom: 150px
+        position: relative
+    h2
+        margin: 0 auto
+        margin-bottom: 100px
+        background: url(/wp-content/themes/palsanmaki/assets/images/header_plate.png) 50% 50% no-repeat
+        width: fit-content
+        padding: 30px 70px
+        background-size: cover
+        position: relative
+        top: 20px
+        transform: rotate(-2deg)
+
+    .image
+        position: relative
+        .person_img
+            position: relative
+            z-index: 3
+            cursor: pointer
+            margin: 0 auto
+            display: block
+        .pop_up_item
+            position: absolute
+            bottom: -200px
+            left: 0
+            transition: 0.3s
+            z-index: 1
+        &:hover
+            .pop_up_item
+                bottom: 170px
+                left: 0
+                transition: 0.3s
+    .product_item
+        margin-top: -20px
+        margin-bottom: 20px
+        position: relative
+        height: 270px
+        overflow: hidden
+        .frame
+            background: url(/wp-content/themes/palsanmaki/assets/images/frame.png) 50% 50% no-repeat
+            background-size: contain
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: 5
+        img
+            z-index: 3
+            position: relative
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .learn-more
+        width: fit-content
+        margin: 0 auto
+        font-family: $matrix-bold-fonts
+        font-size: 28px
+        line-height: 38px
+        color: $base-color
+        padding: 22px 35px
+        background: url(/wp-content/themes/palsanmaki/assets/images/р3_plate.png) 50% 50% no-repeat
+        background-size: cover
+        text-decoration: none
+        display: block
+        transition: 0.3s
+        &:hover
+            transition: 0.3s
+            transform: rotate(-3deg)

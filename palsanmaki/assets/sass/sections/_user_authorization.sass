@@ -1,0 +1,101 @@
+.authorization_section
+    position: relative
+    background: #3a0066
+    padding-bottom: 150px
+    .page-hero-section
+        height: 200px
+        background: url(/wp-content/themes/palsanmaki/assets/images/bd_top_down.png) 50% 100% repeat-x #3a0066
+        padding-top: 0
+    form
+        background: url(/wp-content/themes/palsanmaki/assets/images/form_plate.png) 50% 50% no-repeat
+        background-size: contain
+        text-align: center
+        padding: 100px
+        width: fit-content
+        margin: 0 auto
+        position: relative
+        flex-direction: column
+
+        h3
+            font-size: 28px
+            line-height: 34px
+            max-width: 350px
+            margin: 0 auto
+            margin-top: 50px
+            margin-bottom: 30px
+        input
+            border-radius: 20px
+            padding: 8px 20px
+            border: 1px solid #333
+            margin: 0 15px
+            margin-bottom: 15px
+        #address
+            width: 95%
+            margin: 0 auto
+            margin-bottom: 15px
+        input[type=submit],
+        button[type=submit]
+            font-family: $doublebass-fonts
+            background: url(/wp-content/themes/palsanmaki/assets/images/р3_plate_5.png) 50% 50% no-repeat
+            background-size: contain
+            height: 90px
+            width: 200px
+            font-size: 32px
+            line-height: 38px
+            margin-top: 0px
+            margin-bottom: 20px
+            border: 0
+            transition: 0.3s
+            text-transform: uppercase
+            font-weight: 700
+            &:hover
+                transition: 0.3s
+                transform: rotate(-3deg)
+
+        .pass
+            position: relative
+            width: fit-content
+            margin: 0 auto
+            .show_pass
+                position: absolute
+                border: 0
+                background: none
+                top: 3px
+                right: 20px
+                height: 30px
+                width: 30px
+                border-radius: 15px
+    .remind_password
+        +link-light
+.user_account
+    background: $primary-color
+.password-remind-section
+    form
+        input[type="submit"]
+            width: fit-content
+            font-size: 22px
+            display: block
+            height: 120px
+            background: url(/wp-content/themes/palsanmaki/assets/images/р3_plate_5.png) 50% 50% no-repeat
+            background-size: contain
+.user_account form input[type="submit"],
+.user_account form button[type="submit"],
+.user_change_password form input[type="submit"],
+.user_change_password form button[type="submit"]
+    width: fit-content
+    padding: 30px 50px
+    font-size: 24px
+
+.allert_form
+    background: #fff
+    padding: 30px
+    width: 75%
+    margin: 0 auto
+    display: block
+    text-align: center
+    font-size: 28px
+    border-radius: 20px
+.allert_form.success
+    color: #00af29
+.allert_form.failure
+    color: #ee2800

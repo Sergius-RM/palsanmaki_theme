@@ -1,0 +1,22 @@
+body {
+    background: #3a0066 !important;
+}
+.language-switcher {
+    display: none !important;
+}
+.login h1 a {
+    background-image: none, url(/wp-content/uploads/2024/03/HK-Palsanmaki_Valkea-Logo.svg) !important;
+    width: 250px !important;
+    height: 150px !important;
+    background-size: cover !important;
+}
+.login #backtoblog a, .login #nav a {
+    color: #e99002 !important;
+    font-size: 16px !important;
+}
+.login #nav {
+    text-align: center !important;
+}
+.wp-core-ui .button-primary.active, .wp-core-ui .button-primary.active:focus, .wp-core-ui .button-primary.active:hover, .wp-core-ui .button-primary:active {
+    background: #3a0066 !important;
+}

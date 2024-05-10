@@ -1,0 +1,116 @@
+.hero-section
+    position: relative
+    padding-bottom: 10vw
+    background: url(/wp-content/themes/palsanmaki/assets/images/bd_top_down.png) 50% 100% repeat-x $primary-color
+    .slide_item
+        position: relative
+        // max-height: 600px
+        padding: 0
+        .row
+            align-items: center
+            height: 100%
+        &:hover
+            h3, .learn-more
+                color: $seconday-dark
+            .arrow_r
+                transform: scaleX(1.5)
+        img
+            width: 100%
+            height: 100%
+            margin: 0 auto
+            display: block
+            object-fit: cover
+        .slider_content_area
+            justify-content: center
+            display: flex
+            flex-direction: column
+            .slider_content
+                background: url(/wp-content/themes/palsanmaki/assets/images/form_plate.png) 50% 50%
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+                width: 26vw
+                padding: 30px
+                height: 18vw
+                display: flex
+                flex-direction: column
+                justify-content: center
+                h2
+                    color: #000
+                    line-height: 40px
+                    margin-bottom: 15px
+                    font-size: 32px
+                h3
+                    font-size: 32px
+                    line-height: 42px
+                    color: #000
+                    font-family: $matrix-bold-fonts
+                p
+                    font-size: 16px
+                    line-height: 17px
+                    font-weight: 400
+            .learn-more
+                width: fit-content
+                font-family: $matrix-bold-fonts
+                font-weight: 700
+                color: $base-color
+                font-size: 22px
+                line-height: 32px
+                padding: 25px 30px
+                background: url(/wp-content/themes/palsanmaki/assets/images/form_plate_mob.png) 50% 50% no-repeat
+                background-size: contain
+                text-decoration: none
+                max-width: 20vw
+                text-align: center
+                margin-top: 20px
+                transition: 0.3s
+                &:hover
+                    transition: 0.3s
+                    transform: rotate(-3deg)
+
+    .tns-nav
+        text-align: center
+        button
+            border-radius: 50%
+            display: inline-block
+            width: 20px
+            height: 20px
+            border: 0
+            margin: 10px
+            border: 4px solid #fff
+            background: #fff
+        .tns-nav-active
+            background: #333
+            border: 4px solid #fff
+    .tns-controls
+        button
+            border: 0
+            font-size: 0
+            width: 140px
+            height: 100px
+            border-radius: 50%
+            transform-origin: center center
+            transition: transform 0.3s
+        [data-controls=prev]
+            position: absolute
+            top: 40%
+            transform: translateY(-50%)
+            z-index: 9
+            left: 10vw
+            background: url('/wp-content/themes/palsanmaki/assets/images/hend_left.png') 50% 50% no-repeat
+            background-size: 90%
+            &:hover
+                transform: translateY(-50px) rotate(10deg)
+        [data-controls=next]
+            position: absolute
+            top: 40%
+            transform: translateY(-50%)
+            z-index: 9
+            right: 10vw
+            background: url('/wp-content/themes/palsanmaki/assets/images/hend_right.png') 50% 50% no-repeat
+            background-size: 90%
+            &:hover
+                transform: translateY(-50px) rotate(-10deg)
+    [data-action=stop],
+    [data-action=start]
+        display: none !important

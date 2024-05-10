@@ -1,0 +1,202 @@
+.user_account_section
+    margin-top: 50px
+    margin-bottom: 150px
+    .tab-content
+        .container
+            padding: 0
+    h3
+        margin-bottom: 30px
+        font-family: $font-texts
+    .nav-tabs
+        border: 0
+        margin-bottom: 100px
+    .nav-item
+        font-size: 16px
+        line-height: 19px
+        font-weight: 600
+        .nav-link
+            color: #000
+            border: 0
+            padding: 10px 0
+            margin-right: 50px
+        .nav-link.active
+            border-bottom: 2px solid #000
+    .user_data_tab
+        margin-bottom: 50px
+        .user_data_item
+            display: flex
+            font-size: 16px
+            line-height: 19px
+            padding: 12px 0
+            font-family: $font-texts
+            strong
+                width: 150px
+                font-weight: 400
+    .user_tab_two_coll
+        display: flex
+        width: 100%
+        justify-content: space-between
+    .admin_control_btn
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+        .add_new_auction
+            &::after
+                display: none
+        i
+            margin-right: 10px
+            font-size: 22px
+    .admin_control_btn,
+    .user_control_btn
+        a
+            +cta-btn
+            display: flex
+            &:hover
+                +cta-btn-hover
+    .user_control_btn
+        .change_data_btn
+            display: block
+            width: fit-content
+            margin-bottom: 20px
+        .change_password_btn
+            width: fit-content
+            background: #fff
+            border: 1px solid $seconday-color
+            transition: 0.2s
+
+    .success-message
+        font-size: 16px
+        font-family: $matrix-fonts
+        border-radius: 30px
+        // background: $seconday-light
+        font-weight: 600
+        padding: 10px 25px
+        border: 2px solid $btn-hover
+        width: fit-content
+
+    .admin_recommended_products
+        .admin_recommend_item
+            margin-top: 100px
+            .admin_recommend_list
+                height: 300px
+                overflow: auto
+                padding: 20px
+                border: 1px solid #ccd0d4
+
+                margin-bottom: 30px
+                label
+                    margin-bottom: 0px
+                    font-size: 16px
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    line-height: 1.5
+                    img
+                        width: 70px
+                        height: 50px
+                        object-fit: cover
+                    input
+                        width: 20px
+                        height: 20px
+                        margin: 0 10px
+            h4
+                text-align: center
+                font-family: $font-texts
+        .auction_details_link
+            margin-right: 30px
+    .admin_recommend_list::-webkit-scrollbar
+        width: 10px
+        /* Стилизация ползунка скроллбара */
+    .admin_recommend_list::-webkit-scrollbar-thumb
+        background-color: #888
+        border-radius: 5px
+        /* Стилизация трека скроллбара */
+    .admin_recommend_list::-webkit-scrollbar-track
+        background-color: #f0f0f0
+    .admin_recommend_list
+        scrollbar-width: thin
+        scrollbar-color: #888 #f0f0f0
+
+.registration-success.hidden
+    display: none !important
+.confirm_section
+    text-align: center
+    color: #fff
+    font-size: 18px
+    font-weight: 600
+    h2
+        text-align: center
+        color: $seconday-color
+        padding: 50px 0
+        font-family: $font-texts
+
+    .user_comment_area
+        margin-bottom: 50px
+        form
+            background: url(/wp-content/themes/palsanmaki/assets/images/text_plate_mob2.png) 50% 50% no-repeat
+            background-size: cover
+            padding: 30px
+            width: 100%
+            h3
+                text-align: center
+                margin-top: 30px
+                margin-bottom: 30px
+            textarea
+                border-radius: 30px
+                padding: 20px
+                border: 1px solid #333
+                width: 85%
+                margin: 0 auto
+                margin-bottom: 15px
+                display: block
+            button[type="submit"]
+                font-size: 19px
+    .link_in
+        text-align: center
+        color: #fff
+        font-size: 18px
+        font-weight: 600
+        a
+            text-decoration: none
+            color: $seconday-color
+            font-weight: 600
+
+.acf-form-wrapper
+    width: 100%
+    margin-top: 0
+    .acf-field
+        padding: 0 !important
+        padding-bottom: 30px !important
+    label
+        line-height: 32px
+        font-size: 28px
+        font-weight: 600 !important
+        margin-bottom: 30px !important
+.allert_form,
+.notification,
+.registration-success,
+.error_allert
+    position: fixed
+    top: 20%
+    margin: 0 auto
+    z-index: 10
+    padding: 30px 50px
+    background: #fff
+    width: 300px
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+    line-height: 28px
+    font-weight: 700
+    border-radius: 20px
+    border: 2px solid #e99002
+    .close-registration-success
+        margin-left: 10px
+        border: 0
+        background: none
+        color: #e99002
+        font-size: 18px
+        position: absolute
+        top: 10px
+        right: 10px

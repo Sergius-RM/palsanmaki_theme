@@ -1,0 +1,230 @@
+.site-navigation
+    // width: 73%
+    width: -moz-available
+    width: -webkit-fill-available
+    ul
+        margin-bottom: 0
+        position: relative
+        margin-left: 4em
+        padding-left: 0
+        li
+            display: inline-block
+            padding: 40px 15px
+            position: relative
+            margin-right: 10px
+            a
+                text-decoration: none
+                color: $white-color
+                font-family: $font-texts
+                font-size: 14px
+                line-height: 16px
+                font-weight: 600
+                &:hover
+                    +link-hover
+                    color: $seconday-color
+                    border-color: $seconday-color
+            a::before
+                content: ""
+                position: absolute
+                top: 100%
+                left: 0
+                width: 100%
+                height: 1px
+                background-color: $seconday-color
+                transform: scaleX(0)
+                transform-origin: left
+                transition: transform 0.2s
+            a:hover::before
+                transform: scaleX(1)
+        .sub-menu
+            text-align: left
+            position: absolute
+            top: -500px
+            opacity: 0
+            width: max-content
+            background: $seconday-light
+            padding: 0
+            margin: 0
+            z-index: -1
+            transform: translateX(-20%)
+            li
+                display: block
+                padding: 0
+                margin-right: 0
+                a
+                    color: $primary-color
+                    display: initial
+                    padding: 25px 20px
+                    display: block
+                    &:hover
+                        color: $primary-color
+                a::before
+                    content: ""
+                    position: absolute
+                    top: 100%
+                    left: 0
+                    width: 100%
+                    height: 1px
+                    background-color: $primary-color
+                    transform: scaleX(0)
+                    transform-origin: left
+                    transition: transform 0.2s
+                a:hover::before
+                    transform: scaleX(1)
+        > .menu-item-has-children
+            .sub-menu
+                .menu-item-has-children
+                    &::after
+                        content: ''
+        > .menu-item-has-children
+            &:hover
+                .sub-menu
+                    top: 97px
+                    opacity: 1
+                    transition: 0.3s
+                    z-index: 1
+
+.menu-trigger .active_sub_menu
+    top: 97px
+    opacity: 1
+    transition: 0.3s
+    z-index: 1
+    display: block !important
+
+.logged-user
+    img
+        border-radius: 50px
+        margin-right: 10px
+        width: 20px
+        height: 20px
+    span
+        text-align: center
+        font-family: "Inter"
+        font-size: 14px
+        line-height: 17px
+        font-weight: 600
+    a::after
+        display: none
+
+.navbar-toggler-icon
+    position: absolute
+    right: 40px
+    top: 35px
+    z-index: 999
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+.mob_menu
+    +.show
+    background: #000000e6
+    padding: 40px
+    width: 100%
+    top: 0
+    position: fixed
+    height: 100%
+    overflow: scroll
+    padding-top: 100px
+    .site-navigation
+    ul
+        padding: 0
+        li
+            display: block
+            padding: 15px 15px
+            list-style: none
+            position: relative
+            a
+                text-decoration: none
+                color: #fff
+                font-family: $font-texts
+                width: 100%
+                font-size: 18px
+                font-weight: 600
+                .description
+                    display: block
+                    color:#808080
+                    margin-top: 10px
+                    font-size: $f6
+                    line-height: $lh-p
+                    font-weight: 300
+                    font-family: Verdana, Tahoma, sans-serif
+        .menu-item-has-children
+           > a
+                // color: $primary-color
+
+.mob_menu
+    .menu-main-menu-container
+        .menu
+            li
+                width: fit-content
+                position: relative
+
+.pagination
+    margin-top: 30px
+    .nav-links
+        .page-numbers
+            color: #333
+            text-decoration: none
+            margin-right: 15px
+            font-size: 16px
+            &:hover
+                color: $primary-color
+            .current
+                color: $primary-color
+
+.serice_menu
+    .widget_nav_menu
+        width: fit-content
+    ul
+        padding: 0
+        margin: 0
+        text-align: right
+        text-align: -moz-right
+        text-align: -webkit-right
+        li
+            list-style: none
+            text-align: center
+            border-radius: 30px
+            width: max-content
+            display: inline-block
+            position: relative
+            margin-left: 0px
+            +btn-option
+            margin-bottom: 0
+            &:hover
+                +btn-option-hover
+                cursor: pointer
+            i
+                margin-right: 10px
+            a
+                color: $base-color
+                font-weight: 600
+                text-decoration: none
+                transition: 0.2s
+                &::after
+                    font-family: bootstrap-icons
+                    content: "\f138"
+                    margin-left: 10px
+                    top: 3px
+                    position: relative
+                &:hover
+                    border-bottom: 0
+                    padding-bottom: 0
+                    color: $light-color
+                    transition: 0.2s
+        li:first-child
+            background: none
+            a
+                color: $white-color
+            a::after
+                display: none
+footer
+    .serice_menu
+        ul
+            text-align: right
+            li
+                display: block
+                margin-bottom: 20px
+            li:first-child
+                background: none
+                padding: 10px 10px
+                text-align: right
+                width: 100%

@@ -1,0 +1,67 @@
+.service_grid
+    padding-top: 100px
+    padding-bottom: 100px
+    background: url(/wp-content/themes/palsanmaki/assets/images/bd_double.png) 50% 50% repeat-x $primary-color
+    background-size: contain
+    padding: 10vw 0
+
+    h2
+        margin: 0 auto
+        margin-bottom: 30px
+        background: url(/wp-content/themes/palsanmaki/assets/images/header_plate.png) 50% 50% no-repeat
+        width: fit-content
+        padding: 30px 70px
+        background-size: cover
+        transform: rotate(2deg)
+    .blogrid-content
+        margin-bottom: 30px
+    .articles-item
+        position: relative
+        margin-bottom: 20px
+        a
+            text-decoration: none
+        img
+            width: 100%
+            height: 20vw
+            object-fit: scale-down
+            margin-bottom: 15px
+        .articles-content
+            margin-bottom: 30px
+            background: url(/wp-content/themes/palsanmaki/assets/images/text_plate.png) 50% 50% no-repeat
+            background-size: cover
+            text-align: center
+            padding: 50px 60px
+            margin-top: -5vw
+            z-index: 9
+            position: relative
+            h3
+                text-align: center
+                margin-bottom: 20px
+    .learn-more
+        width: fit-content
+        margin: 0 auto
+        font-family: $matrix-bold-fonts
+        font-weight: 700
+        color: $base-color
+        font-size: 24px
+        line-height: 28px
+        padding: 30px 30px
+        background: url(/wp-content/themes/palsanmaki/assets/images/р3_plate_4.png) 50% 50% no-repeat
+        background-size: cover
+        text-decoration: none
+        transition: 0.3s
+        &:hover
+            transition: 0.3s
+            transform: rotate(-3deg)
+    :not(:root:root) .equal-height
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+
+    :not(:root:root) .equal-height > *
+        -webkit-box-flex: 1
+        -ms-flex: 1
+        flex: 1
+        margin: 0

@@ -1,0 +1,140 @@
+footer
+    +footer-fonts
+    .footer-logo
+        display: block
+        height: auto
+    h3
+        color: $seconday-color
+        font-size: $f6
+        line-height: $lh-6
+        font-family: $montserrat-semiBold
+        font-weight: 700
+        margin-bottom: 15px
+    a
+        +link-light
+        font-family: $font-link
+        color: $light-color
+        &:hover
+            border-bottom: 0
+            color: $light-color
+    .physical_adress
+        font-family: $font-texts
+        color: $light-color
+    .site-branding
+        div
+            margin-bottom: 10px
+            div, a
+                display: flex
+    .footer_contacts
+        margin-bottom: 30px
+        font-family: $font-link
+        a
+            display: block
+            margin-bottom: 9px
+            word-break: break-all
+            font-family: $font-link
+            margin-bottom: 15px
+        i
+            color: $seconday-color
+            margin-right: 10px
+            font-size: 16px
+    .footer_nav
+        ul
+            padding: 0
+            list-style: none
+            li
+                line-height: $lh-3
+                a
+                    transition: 0.2s
+                    color: $seconday-light
+                    &:hover
+                        color: $seconday-color
+                        transition: 0.2s
+                a::before
+                    content: ""
+                    position: absolute
+                    top: 100%
+                    left: 0
+                    width: 100%
+                    height: 1px
+                    background-color: #E5842D
+                    transform: scaleX(0)
+                    transform-origin: left
+                    transition: transform 0.2s
+                a:hover::before
+                    transform: scaleX(1)
+    .footer_socials
+        margin-top: 30px
+    .footer_ordering
+        h4
+            max-width: 300px
+            margin-bottom: 20px
+            color: $white-color
+            font-family: $inter-semiBold
+        a
+            color: $seconday-color
+            &:hover
+                color: $seconday-light
+        i
+            color: $seconday-color
+            margin-right: 10px
+        .orderind_link
+            +btn-option
+            margin-bottom: 30px
+            display: block
+            width: fit-content
+            color: $base-color
+            font-family: $inter-semiBold
+            font-size: 16px
+            i
+                color: $base-color
+            &:hover
+                +btn-option-hover
+                color: $light-color
+                text-decoration: none
+    .footer_contact_wiget
+        margin-top: 50px
+        margin-bottom: 50px
+
+.footer_copyright
+    height: 50px
+    background: $seconday-color
+    color: $primary-dark
+    padding: 0 30px
+    font-family: $font-texts
+    font-size: $f7
+    a
+        color: #333
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    p
+        margin: 0
+    .row
+        height: 100%
+        width: inherit
+    .footer_copyright_menu
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+            li
+                display: inline-block
+                border-right: 1px solid $light-color
+                padding: 0 30px
+                &:last-child
+                    border-right: none
+                a
+                    color: $primary-dark
+                    text-decoration: none
+                    font-family: $font-link
+                    &:hover
+                        color: #000
+.site-footer
+    background-color: $primary-dark
+    padding: 65px 104px
+
+.board_fence
+    width: 100%
+    height: 15vw
+    background: url(/wp-content/themes/palsanmaki/assets/images/bd_down.png) 50% 0% repeat-x $primary-color
